@@ -1,3 +1,4 @@
+#to play tic tac toe in bored time
 from tkinter import *
 import tkinter.messagebox
 
