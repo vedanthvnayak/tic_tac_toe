@@ -13,7 +13,7 @@ root.resizable(False, False)
 
 click = True
 
-# Count variable to check the no. of turns
+
 count = 0
 
 btn1 = StringVar()
@@ -30,7 +30,7 @@ xPhoto = PhotoImage(file='your_image_name.extension')
 oPhoto = PhotoImage(file='your_image_name.extension')
 
 
-# Grid buttons
+
 def start():
     button1 = Button(root, height=9, width=19, bd=.5, relief='sunken', bg='#ccfff7', textvariable=btn1,
                      command=lambda: press(1, 0, 0))
@@ -123,7 +123,6 @@ def press(num, r, c):
         checkWin()
 
 
-# Checks the winner
 
 def checkWin():
     global count, click
@@ -165,15 +164,15 @@ def checkWin():
 
 # Clear the tiles
 def clear():
-    btn1.set('')
-    btn2.set('')
-    btn3.set('')
-    btn4.set('')
-    btn5.set('')
-    btn6.set('')
-    btn7.set('')
-    btn8.set('')
-    btn9.set('')
+    btn1.set(' ')
+    btn2.set(' ')
+    btn3.set(' ')
+    btn4.set(' ')
+    btn5.set(' ')
+    btn6.set(' ')
+    btn7.set(' ')
+    btn8.set(' ')
+    btn9.set(' ')
 
 
 start()
